@@ -1,0 +1,5 @@
+ dotnet new webapi -n SimpleAPI
+ dotnet new xunit -n SimpleAPI.Test
+dotnet new sln --name SimpleAPISln
+dotnet sln SimpleAPISln.sln add src/SimpleAPI/SimpleAPI.csproj test/SimpleAPI.Test/SimpleAPI.Test.csproj
+dotnet add test/SimpleAPI.Test/SimpleAPI.Test.csproj reference src/SimpleAPI/SimpleAPI.csproj
