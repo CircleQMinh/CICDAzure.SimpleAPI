@@ -26,12 +26,12 @@ namespace SimpleAPI.Test
         public void MathController_SubtractTwoNumber_ValidInput()
         {
             //arrange
-            int numberOne = 4;
+            int numberOne = 9;
             int numberTwo = 5;
             //act
             var result = controller.SubtractTwoNumber(numberOne, numberTwo).Value;
             //assert
-            Assert.Equal(-1, result);
+            Assert.Equal(4, result);
         }
     }
 }
